@@ -1,0 +1,6 @@
+PyMuPDF==1.19.5
+faiss-cpu==1.7.2
+numpy==1.21.0
+transformers==4.18.0
+torch==1.10.0
+gliner==0.1.0

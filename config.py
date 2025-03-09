@@ -1,0 +1,23 @@
+import os
+
+#paths
+PDF_DIR = "" #path to directory containing PDF files
+VECTOR_STORE_PATH = "vector_store.index"
+METADATA_PATH = "metadata.pkl"
+
+#chunking parameters
+DEFAULT_CHUNK_SIZE = 500  # words per chunk 
+DEFAULT_CHUNK_OVERLAP = 50  # words of overlap between chunks
+
+# NER entity labels
+LEGAL_ENTITIES = [
+    "CASE_ID", "JUDGMENT_DATE", "COURT_NAME", "BENCH", "CASE_TYPE", "DISPOSITION",
+    "JUDGE", "ADVOCATE", "PETITIONER", "RESPONDENT", "WITNESS", "LAW_FIRM",
+    "ACT", "SECTION", "SUB_SECTION", "RULE", "REGULATION", "NOTIFICATION",
+    "ORDER_TYPE", "WRIT_TYPE", "JUDGMENT_PARTS", "CITATION",
+    "BANK_NAME", "COMPANY", "GST_NUMBER", "PAN_NUMBER", "TRADEMARK",
+    "COURT_ADDRESS", "CITY", "STATE", "POLICE_STATION",
+    "FIR_NUMBER", "CHARGE", "SENTENCE", "FINE_AMOUNT",
+    "HEARING_DATE", "CASE_STATUS", "APPEAL_STATUS",
+    "EVIDENCE_TYPE", "DIGITAL_SIGNATURE", "FORENSIC_REPORT"
+]
